@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+
+        #c1 {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="c1" width="500" height="500"></canvas> <!--css içerisinde width ve height değerleri almaz hata alır doğrusu bu şekil-->
+
+    <script>
+
+        var canvas = document.getElementById("c1");
+        var a = canvas.getContext("2d");
+
+        //a.rect(30, 30, 250, 150); //dikdörtgen yapma işlemi
+        //a.fillStyle = "blue";
+        //a.strokeStyle = "green";
+        //a.lineWidth = "5";
+
+        //a.stroke();
+
+        //------------------------------------
+        //2.yöntem 
+
+        //a.strokeRect(30, 30, 250, 150);
+
+
+
+        //------------------------------------
+        //3.yöntem 
+
+        a.fillRect(30, 30, 250, 150);
+
+
+    </script>
+
+
+</body>
+</html>

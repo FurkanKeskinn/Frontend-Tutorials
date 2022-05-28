@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            display:block;
+            border: 2px solid lightgrey;
+            color:gray;
+            font-weight:bold;
+            margin: 15px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1" class="deneme">
+        div (5.Ebevyn) ID: #div1
+
+        <div id="div2" class="deneme">
+            div (4.Ebevyn) ID: #div2
+
+            <ul class="deneme">
+                ul (3.Ebevyn)
+
+                <li class="deneme">
+                    li (2.Ebevyn)
+
+                    <p class="deneme">
+                        p (1.Ebevyn)
+
+                        <span class="deneme">span</span>
+
+                    </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div id="div3" class="deneme">
+            div ID: #div3
+
+            <div id="div4" class="deneme">
+                div ID: #div4
+
+            </div>
+
+        </div>
+
+        <h1 class="deneme">
+            h1
+
+        </h1>
+
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                //$("span").parent().css({ //span elementinin ebeveynini aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+                //$("span").parents().css({ //span elementinin üstündeki bütün ebeveyninlerini aldı (body ve html de aldı)
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+                //$("span").parents("ul").css({ //span elementinin üstündeki ul ebeveynini aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+                //$("span").parents("#div2").css({ //span elementinin üstündeki div2 id li ebeveynini aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+                //$("span").parentsUntil("#div2").css({ //span elementinin üstündeki div2 id li kısma kadar bütün ebeveynlerini aldı (belirtilen ebeveyn kısmına kadar alır yazılan ebevyni almaz)
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+                //$("span").parentsUntil("div").css({ //span elementinin üstündeki ilk karşılaştığı div e kadar bütün ebeveynlerini aldı (belirtilen ebeveyn kısmına kadar alır yazılan ebevyni almaz)
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+
+            });
+
+        });
+
+
+
+    </script>
+</body>
+</html>

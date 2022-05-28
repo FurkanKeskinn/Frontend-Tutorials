@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        body {
+            margin:0;
+            background-color:aquamarine;
+        }
+
+        #div1{
+            width:20%;
+            height:200px;
+            background-color:lightgray;
+            position:absolute;
+            border-radius:10px;
+            left:40%;
+            top:30%;
+        }
+
+        #kullaniciAdi {
+            width: 150px;
+            height: 30px;
+            margin-left:20px;
+            margin-top:20px;
+        }
+
+        #parola {
+            width: 150px;
+            height: 30px;
+            margin-left: 66px;
+            margin-top: 20px;
+        }
+        #btn {
+            width: 250px;
+            height: 30px;
+            margin-left: 70px;
+            margin-top: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+
+        <label style="margin-left:60px" for="kullaniciAdi">Kullanıcı Adı : </label>
+        <input id="kullaniciAdi" type="text" />
+
+        <label style="margin-left:60px" for="parola">Parola : </label>
+        <input id="parola" type="password" />
+
+        <br /><br />
+        <button onclick="girisOnay()" id="btn">Giriş Yap</button>
+
+
+
+    </div>
+
+
+
+    <img src="goruntu1.jpg" id="img" width="1920" height="965" />
+
+
+
+
+    <script>
+
+        var text;
+
+        function resimSec() {
+
+            var a = ["goruntu1.jpg", "goruntu2.jpg", "goruntu3.jpg", "goruntu4.jpg",
+                "goruntu15jpg", "goruntu6.jpg"]
+
+            text = "";
+
+            var random = Math.round(Math.random()) * 5;
+
+            text = a[random];
+
+
+        }
+
+        setInterval(function () {
+
+            resimSec();
+
+            document.getElementById("img").src = text;
+
+
+        }, 2000);
+
+
+        var kullanicilar = [{ kullaniciAdi: "admin", parola: "admin"},
+                            { kullaniciAdi: "javascript", parola: "1234"},
+            { kullaniciAdi: "furkan", parola: "4321" }];
+
+        var girilenKullaniciAdi;
+        var girilenParola;
+        var x;
+
+        function kontrolEt() {
+
+            girilenKullaniciAdi = document.getElementById("kullaniciAdi").value;
+            girilenParola = document.getElementById("parola").value;
+
+            for (x of kullanicilar) {
+
+                if ((x.kullaniciAdi == girilenKullaniciAdi) && (x.parola == girilenParola)) {
+
+                    return true;
+                }
+            }
+
+        }
+        function girisOnay() {
+
+            kontrolEt();
+
+            if (kontrolEt()) {
+
+                window.open("ders_44.html", "_self");
+
+            }
+            else {
+
+                alert("Hatalı Kullanıcı Adı ve ya Parola. Yeniden Deneyiniz...");
+
+                document.getElementById("kullaniciAdi").value = "";
+                document.getElementById("parola").value = "";
+            }
+
+
+
+        }
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        #div1 {
+            height: 80px;
+            width: 100%;
+            background-color: yellow;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="div1" class="class1" name="name1"> Javascript öğreniyorum.</div>
+
+
+    <script>
+
+        //yöntem 1
+        //document.getElementById("div1").style.backgroundColor = "blue";//style komutu ile CSS içerisine girebiliyoruz.
+        //document.getElementById("div1").style.marginTop = "50px";
+        //document.getElementById("div1").style.fontSize = "50px";
+        //document.getElementById("div1").style.color = "blue";
+
+
+        //yöntem 2
+        var a = document.getElementById("div1");
+        a.style.color = "blue";       //Bu kısa yoluyla da kullanılabilir
+        a.style.fontSize = "50px";
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <p id="p1">HTML</p>
+    <p id="p2"><b>CSS</b></p>
+    <p id="p3">Javascript</p>
+
+    <input id="t1" type="text" value="JQuery"/>
+    <br /><br />
+    <a id="a1" href="ders_54.html" target="_blank">Ders_54</a>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                //alert($("#p1").text()); 
+
+                //var a = $("#p1").text();//üsttekinin aynısı
+                //alert(a);
+
+                //var a = $("#p2").text();//sadece yazıyı görürüz
+                //alert(a);
+
+                //var a = $("#p2").html();//html kodlarıyla birlikte görürüz.
+                //alert(a);
+
+                //var a = $("#t1").html();//ekran çıktısı boştur
+                //alert(a);
+
+                //var a = $("#t1").text();//ekran çıktısı boştur.
+                //alert(a);
+
+                //var a = $("#t1").val();// inputlar içerisindeki yazı bu şekilde gösterilir
+                //alert(a);
+
+                //var a = $("#a1").attr("href");// attributelerin içerisindeki href elementi bu şekilde gösterilir
+                //alert(a);
+
+                //var a = $("#a1").attr("target");// attributelerin içerisindeki target elementi bu şekilde gösterilir
+                //alert(a);
+
+                //var a = $("#a1").attr("class");// attributelerin içerisindeki class elementi bu şekilde gösterilir
+                //alert(a);
+
+                //$("#p1").text("Jquery Öğreniyorum");// text içeriği değiştirme işlemi.
+
+                //$("#p1").text("<b>Jquery Öğreniyorum</b>");// text içeriğini kalın değiştirme işlemi fakat olmaz alttaki gibi olur.
+
+                //$("#p1").html("<b>Jquery Öğreniyorum</b>");// text içeriğini kalın değiştirme işlemi.
+
+                //$("#t1").val("<b>Jquery Öğreniyorum</b>");// value nin içerisine yazınca da inputlara etki ediyoruz.
+
+                //$("#a1").attr("href", "ders_53.html");// attribute içeriği değiştirme işlemi.
+
+                //$("#a1").attr({
+
+                //    "href": "ders_53.html", //bu şekilde de attribute içeriği değiştirilebilir.
+                //    "target": "_self"
+                //    });
+
+
+            });
+
+        });
+
+    </script>
+
+
+</body>
+</html>

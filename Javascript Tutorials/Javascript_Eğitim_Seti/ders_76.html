@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+
+        #c1 {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="c1" width="500" height="500"></canvas> <!--css içerisinde width ve height değerleri almaz hata alır doğrusu bu şekil-->
+
+    <script>
+
+        var canvas = document.getElementById("c1");
+        var a = canvas.getContext("2d");
+
+        a.arc(250, 250, 100, 0, Math.PI * 2, false);//false ve true dememmizin amacı saat yönünde olmasıydı
+        //üstteki ve alttaki aynı işlem ancak yarım çember çizmek istersek üssteki yapılmalıdır
+        //a.arc(250, 250, 100, 0, 360, false);
+
+
+        a.lineWidth = "5";
+
+        a.stroke();
+        a.fill();
+
+    </script>
+
+
+</body>
+</html>

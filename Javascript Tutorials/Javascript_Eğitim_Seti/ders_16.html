@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        var a = String(10);// string değişkenine dönüşüm işlemi
+        var a = String(false);// boolean değişkenine dönüşüm işlemi
+        var a = String(Date());// string değişkenine dönüşüm işlemi
+
+
+        var c = 15;
+        c = c.toString();// string değişkenine dönüşüm işlemi
+
+
+        var b = ["Elma", "Üzüm", "Portakal"];
+        document.write(b.constructor);// yapıcı fonksiyonu döndürür
+
+
+
+
+        var z = ["Elma", "Üzüm", "Portakal"];
+        function kontrol(x) {
+
+            return x.constructor.toString().indexof("Array") > -1;//Array dizisi olup olmadığı kontrol işlemi
+        }
+        kontrol(z);
+        var y = document.write(z);
+
+
+
+
+        document.write(a);
+
+
+
+    </script>
+</body>
+</html>

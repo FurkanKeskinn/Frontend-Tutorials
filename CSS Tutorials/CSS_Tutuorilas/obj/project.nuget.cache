@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YFECtU3keSrwUBBpNr0gdAgdRSw+lzLkH0+GOmWJm9hFdANAmRoDgxWHD9O/M4zFUj/eQvb7mlZFZmnbrvMUdA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\furka\\source\\repos\\CSS_Tutuorilas\\CSS_Tutuorilas\\CSS_Tutorials.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\furka\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

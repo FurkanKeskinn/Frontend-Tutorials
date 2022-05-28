@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <script>
+
+        var sayi = [45, 68, 27, 36, 102, 55, 8];
+
+        var yazi = "";
+
+
+
+        function yazdir(value, index, array) {
+
+            yazi = yazi + value + "<br>";
+        }
+
+        sayi.forEach(yazdir);
+
+        document.getElementById("div1").innerHTML = yazi;
+
+
+        //------------------------------------------
+
+
+
+
+        function ucIleCarp(value, index, array) {
+
+            return value * 3;
+        }
+
+        var sayi2 = map(ucIleCarp);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+
+        //------------------------------------------
+
+
+
+        function deneme(value, index, array) {
+
+            return value > 30;
+        }
+
+        var sayi2 = sayi.filter(deneme);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+        //------------------------------------------
+
+
+
+        function deneme2(total, value, index, array) {
+
+            return total + value;
+        }
+
+        var sayi2 = sayi.reduce(deneme2);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+        //------------------------------------------
+
+
+        function deneme3(value, index, array) {
+
+            return value > 18;
+        }
+
+        var sayi2 = sayi.every(deneme3);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+
+        //------------------------------------------
+
+
+        function deneme4(value, index, array) {
+
+            return value > 18;
+        }
+
+        var sayi2 = sayi.some(deneme4);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+
+        //------------------------------------------
+
+
+
+
+        function deneme5(value, index, array) {
+
+            return value > 18;
+        }
+
+        var sayi2 = sayi.find(deneme5);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+
+        //------------------------------------------
+
+
+        function deneme6(value, index, array) {
+
+            return value > 18;
+        }
+
+        var sayi2 = sayi.findIndex(deneme6);
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+
+
+
+
+        //------------------------------------------
+
+      
+
+        var sayi2 = sayi.indexOf(60);
+        var sayi2 = sayi.lastIndexOf(60);
+        var sayi2 = sayi.indexOf("60");
+
+        document.getElementById("div1").innerHTML = sayi2;
+
+    </script>
+
+</body>
+</html>

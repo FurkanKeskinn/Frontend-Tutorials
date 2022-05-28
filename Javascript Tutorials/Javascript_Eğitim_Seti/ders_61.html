@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            display: block;
+            border: 2px solid lightgrey;
+            color: gray;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1" class="deneme">
+        div (5.Ebevyn) ID: #div1
+
+        <div id="div2" class="deneme">
+            div (4.Ebevyn) ID: #div2
+
+            <ul class="deneme">
+                ul (3.Ebevyn)
+
+                <li class="deneme">
+                    li (2.Ebevyn)
+
+                    <p class="deneme">
+                        p (1.Ebevyn)
+
+                        <span class="deneme">span</span>
+
+                    </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div id="div3" class="deneme">
+            div ID: #div3
+
+            <div id="div4" class="deneme">
+                div ID: #div4
+
+            </div>
+
+        </div>
+
+        <h1 class="deneme">
+            h1
+
+        </h1>
+
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                //$("#div1").children().css({ //div1 elementinin hemen altındaki çocuklarını aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").children("h1").css({ //div1 elementinin altındaki çocuklarından sadece h1 olanı aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").children("#div3").css({ //div1 elementinin altındaki çocuklarından sadece id si div3 olanı aldı
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").children("#div4").css({ //div1 elementinin altındaki çocuklarından id si div3 olanın çocuğuna ulaşmak istedi fakat onun çocuğu değil.
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").find("#div4").css({ //div1 elementinin altındaki çocuklarından id si div4 olana ulaştı.
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").find("span").css({ //div1 elementinin altındaki çocuklarından span olana ulaştı.
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").find("div").css({ //div1 elementinin altındaki çocuklarından div olanlara ulaştı.
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+                //$("#div1").find("*").css({ //div1 elementinin altındaki bütün çocuklara ulaştı.
+
+                //    "border": "2px solid red",
+                //    "color": "red"
+                //});
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

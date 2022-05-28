@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        #div1 {
+            height: 80px;
+            width: 100%;
+            background-color: yellow;
+        }
+
+        #div2 {
+            height: 80px;
+            width: 100%;
+            background-color: red;
+        }
+
+        #div3 {
+            height: 80px;
+            width: 100%;
+            background-color: blue;
+        }
+
+        #div4 {
+            height: 80px;
+            width: 100%;
+            background-color: green;
+        }
+
+        p{
+            font-size: 35px;
+            color:chartreuse;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <div id="div1" class="class1" name="name1"> Javascript öğreniyorum.</div>
+    <div id="div2" class="class2"></div>
+    <div id="div3" class="class3"></div>
+    <div id="div4" class="class4" name="name1"></div>
+
+    <script>
+
+        //document.getElementById("div1").innerHTML = "Javascript";
+
+        //var a = document.getElementById("div1").innerHTML;//sadece içerik içindeki yazıyı yazar
+        //document.getElementById("div3").innerHTML = a;//div 3 elementine yazımızı gönderiyoruz
+
+
+        //document.getElementById("div1").innerHTML = "<p>Javascript</p>";//paragraf elementini kullanarak yazımızı biçimlendirebiliyoruz.
+
+        //document.getElementById("div1").innerText = "<p>Javascript</p>";//innerText ne yazarsan ekrana onu verir paragraf elementini tanımaz.
+
+        //var a = document.getElementById("div1").innerText;
+        //document.getElementById("div4").innerText = a;//div1deki içeriği div4 e yazdırma işlemi.
+
+        document.getElementById("div1").remove();//kaldırma işlemi
+
+
+
+    </script>
+</body>
+</html>

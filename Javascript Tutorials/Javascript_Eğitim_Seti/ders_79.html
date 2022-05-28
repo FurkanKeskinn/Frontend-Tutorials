@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+
+        #c1 {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="im" src="goruntu1.jpg" width="200" height="200"/>
+
+    <canvas id="c1" width="10000" height="5000"></canvas> <!--css içerisinde width ve height değerleri almaz hata alır doğrusu bu şekil-->
+
+    <script>
+
+        window.onload = function () {
+
+            var canvas = document.getElementById("c1");
+            var a = canvas.getContext("2d");
+
+            var img = document.getElementById("im");
+
+            a.drawImage(img, 20, 20);
+        };
+
+    </script>
+
+
+</body>
+</html>

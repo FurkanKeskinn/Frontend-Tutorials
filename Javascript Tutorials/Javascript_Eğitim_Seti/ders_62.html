@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            display: block;
+            border: 2px solid lightgrey;
+            color: gray;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1" class="deneme">
+        div (5.Ebevyn) ID: #div1
+
+        <div id="div2" class="deneme">
+            div (4.Ebevyn) ID: #div2
+
+            <ul class="deneme">
+                ul (3.Ebevyn)
+
+                <li class="deneme">
+                    li (2.Ebevyn)
+
+                    <p class="deneme">
+                        p (1.Ebevyn)
+
+                        <span class="deneme">span</span>
+
+                    </p>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div id="div3" class="deneme">
+            div ID: #div3
+
+            <div id="div4" class="deneme">
+                div ID: #div4
+
+            </div>
+
+        </div>
+
+        <h1 class="deneme">
+            h1
+
+        </h1>
+
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                $("#div2").siblings().css({ //div2 nin kardeşlerini aldı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("#div2").siblings("h1").css({ //div2 nin kardeşlerinden h1 olana ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("#div2").next().css({ //div2 den sonraki ilk kardeşi olana ulaştı yani div3
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("#div2").nextAll().css({ //div2 nin kardeşlerini aldı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("#div2").nextAll("#div3").css({ //div2 nin kardeşlerinden id si div3 olana ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("#div2").nextUntil("h1").css({ //div2 nin kardeşlerinden h1 e kadar olan kardeşlere ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("h1").prev().css({ //h1 den önceki kardeşe ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("h1").prevAll().css({ //h1 den önceki bütün kardeşlere ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("h1").prevAll("#div2").css({ //h1 kardeşlerinden sadece div2 id li olanlara ulaştı
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+                $("h1").prevUntil("#div2").css({ //h1 kardeşlerinden div2 id li olana kadar kardeşlerine ulaştı(div 2 ve h1 dahil değil)
+
+                    "border": "2px solid red",
+                    "color": "red"
+                });
+
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

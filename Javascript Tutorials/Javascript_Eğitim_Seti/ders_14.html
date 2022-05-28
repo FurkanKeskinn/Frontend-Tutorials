@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        var tarih1 = new Date(2020, 11, 16, 15, 30, 45, 00);
+
+        var tarih2 = new Date();
+
+        //var isim = "dadsaf"; var isim = new String("dadsaf"); //ikiside aynı gösterim
+
+
+        a = tarih2.getTime();// anlık zamanı milisaniye cinsten yazar
+
+        a = tarih2.getFullYear(); // anlık zamanda bulunduğumuz yılı yazar
+
+        a = tarih2.getMonth() + 1; //anlık zamanda bulunduğumuz ayı yazar (yıl başlangıcı olan ocak ayı 0 rakamını alır ondan dolayı +1 ekleriz.)
+
+        a = tarih2.getDate();  // anlık zamanda bulunduğumuz günü yazar
+
+        a = tarih2.getHours(); // anlık zamanda bulunduğumuz saati yazar
+
+        a = tarih2.getMinutes(); // anlık zamanda bulunduğumuz dakikayı yazar
+
+        a = tarih2.getSeconds(); // anlık zamanda bulunduğumuz saniyeyi yazar
+
+        a = tarih2.getMilliseconds(); // anlık zamanda bulunduğumuz milisaniyeyi yazar
+
+        a = tarih2.getDay() // anlık zamanda bulunduğumuz günün integer değerini yazar
+
+        tarih2.setFullYear(2019)// anlık zamanda bulunduğumuz zamanı 2019 yılı içerisinde yazar
+
+        tarih2.setMonth(2)// anlık zamanda bulunduğumuz zamanı Mart ayı içerisinde yazar
+
+
+
+
+        document.write(tarih);
+        document.write(tarih.toString());
+        document.write(tarih.toUTCString());
+
+
+
+    </script>
+
+</body>
+</html>

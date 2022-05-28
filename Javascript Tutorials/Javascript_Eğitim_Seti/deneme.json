@@ -1,0 +1,35 @@
+{
+
+  "kisiler" : [
+  {
+    "isim": "ali",
+    "soyisim": "genç"
+
+    //"bildigiDiller": [ "ingilizce", "Almanca" ],
+
+    //"email": null,
+    //"telefon": 1234567890,
+
+    //"deneme": {
+    //  "isim": "barýþ",
+    //  "soyisim": "akgül"
+    //}
+
+  },
+  {
+    "isim": "barýþ",
+    "soyisim": "akgül"
+  },
+  {
+    "isim": "doruk",
+    "soyisim": "kalender"
+  },
+  {
+    "isim": "mehmet",
+    "soyisim": "þimþek"
+  }
+
+  ]
+
+
+}

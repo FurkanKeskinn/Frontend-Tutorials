@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        #div1 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .beyazYazi {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="div1" class="deneme">
+
+        <p id="p1" >Paragraf 1</p>
+        <p id="p2">Paragraf 2</p>
+        <p id="p3">Paragraf 3</p>
+        <p id="p4" class="red">Paragraf 4</p>
+
+    </div>
+
+    <div></div>
+
+    <br /><br />
+
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                $("#p1").addClass("blue");//class ekleme işlemi
+
+                $("#p1").addClass("blue beyazYazi");//birden fazla class ekleme işlemi
+
+                $("#p4").removeClass("red");//class kaldırma işlemi
+
+                $("#p1").toggleClass("blue");// eğer yazılı klas varsa siler yoksa ekleme işlemi class ekleme işlemi
+
+                $("#p4").removeAttr("class");//Attribute lerimizi kaldırma işlemi
+
+                var a = $("#p1").css("color");//renk bilgilerini alma işlemi
+                alert(a);
+
+                $("#p1").css("color", "red");//rengini değiştirme işlemi
+
+                $("#p1").css("font-size", "50px");//font sizenı değiştirme işlemi
+
+                $("#p1").css({  //birden fazla özellik değiştirme işlemi
+
+                    "color": "red",
+                    "background-color": "yellow",
+                    "font-size": "50px"
+
+                });
+
+            });
+
+        });
+
+
+    </script>
+
+</body>
+</html>

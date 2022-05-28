@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        /*
+        Descendant Selector
+        Child Selector
+        Adjacent Sibling Selector
+        General Sibling Selector
+
+        */
+
+        /*div > p{
+
+            color:red;
+
+        }
+
+        div + p {
+            color: red;
+        }
+
+        div ~ p {
+            color: red;
+        }*/
+
+        /*div  p.p1 {
+            color: red;
+        }*/
+
+        div ~ p.p1 {
+            color: red;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+
+    <div>
+        <span><p>Div İçi paragraf 1</p></span>
+        <p class="p1">Div İçi paragraf 2</p>
+        <p>Div İçi paragraf 3</p>
+    </div>
+
+    <p class="p1">Div dışı paragraf 1</p>
+    <p>Div dışı paragraf 2</p>
+    <p>Div dışı paragraf 3</p>
+    <p class="p1">Div dışı paragraf 4</p>
+
+
+
+</body>
+</html>

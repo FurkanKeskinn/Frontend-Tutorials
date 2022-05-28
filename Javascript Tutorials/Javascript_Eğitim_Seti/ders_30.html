@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        #div1 {
+            height: 100px;
+            width: 100%;
+            background-color: yellow;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <div id="div1"></div>
+
+
+
+    <!--<input onchange="alert('Metin Değişti..')" id="Text1" type="text" value="Javascript" />-->  <!--Metin içeriği değiştirilirse ekrana alert almayı sağlar-->
+
+    <!--<input onfocus="alert('Focuslandı..')" id="Text1" type="text" value="Javascript" />-->  <!--Metin içeriğine tıklandığı anda ekrana alert almayı sağlar-->
+
+    <!--<input onfocus="isim()" onblur="isim2()" id="Text1" type="text" value="Javascript" />--> <!--fonksiyon ile  ( isim ve isim2 ) tıklama ve tıklamadan sonra herhangi bir yere tıklama işlemleri yapıldı-->
+
+    <!--<input onkeypress="isim3()" id ="Text1" type="text" />--> <!--fonksiyon ile (isim3) yazı yazıldığı anda işlem yapıldı-->
+
+    <!--<input onkeyup="alert('Metin Kutusuna Yazıldı..')" id="Text1" type="text" />--> <!--Metin kutusuna tuşa basılıp yazıldıktan sonra verdiği mesaj-->
+
+    <!--<input onkeydown="alert('Metin Kutusuna Yazılamadı..')" id="Text1" type="text" />--> <!--Metin kutusuna tuşa basıp yazılmadan hemen önce verdiği mesaj-->
+
+    <!--<input onmousemove="isim4()" id="Text1" type="text" />--> <!--imleç ile üzerine gelir gelmez verdiği tepki-->
+
+    <input onmouseover="isim4()" onmouseout="isim5()" id="Text1" type="text" /> <!--imleç ile üzerine gelir gelmez verdiği tepki ve ardından imleç çıkarkenki tepkisi-->
+
+
+
+
+
+
+
+
+          <!--<button onclick="alert('Butona Tıklandı')" id="button1">Tıkla</button>--> <!--tıklandığı anda alert mesajı yazar-->
+          
+          <!--<button onclick= "document.getElementById('div1').innerHTML = 'Butona Tıklandı'" id="button1">Tıkla</button>--> <!--tıklandığı anda div1 içerisine yazar-->
+          
+          <!--<button onclick=tiklamaIslemi() id="button1">Tıkla</button>-->  <!--fonksiyon tiklamaIslemi() ile işlem yapıldı-->
+          
+          <!--<button ondblclick=tiklamaIslemi() id="button1">Tıkla</button>--> <!--butona iki kere zorunlu tıklama işlemi-->
+
+          <button onclick=tiklamaIslemi2() id="button1">Tıkla</button> <!--fonksiyon tiklamaIslemi2() ile işlem yapıldı-->
+
+    <script>
+
+        function tiklamaIslemi() {
+
+            //    alert("Butona Tıklandı.")
+
+            document.getElementById("div1").innerHTML = "Butona Tıklandı";
+        }
+
+        function tiklamaIslemi2() {
+
+            //    alert("Butona Tıklandı.")
+
+            document.getElementById("div1").style.backgroundColor = "green";
+        }
+
+
+        function isim() {
+
+            document.getElementById("Text1").innerHTML = "Metin Kutusuna Tıklandı..";
+        }
+
+
+        function isim2() {
+
+            document.getElementById("div1").innerHTML = "Metin Kutusundan Çıkıldı..";
+        }
+
+
+        function isim3() {
+            document.getElementById("div1").innerHTML = "Metin Kutusuna Bir Şey Yazıldı..";
+        }
+
+
+        function isim4() {
+
+            document.getElementById("Text1").style.width = "150px";
+            document.getElementById("Text1").style.height = "150px";
+            document.getElementById("Text1").style.backgroundColor = "red";
+        }
+
+
+        function isim5() {
+
+            document.getElementById("Text1").style.width = "70px";
+            document.getElementById("Text1").style.height = "60px";
+            document.getElementById("Text1").style.backgroundColor = "blue";
+        }
+
+    </script>
+
+
+
+</body>
+</html>

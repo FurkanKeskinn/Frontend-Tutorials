@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+
+        var calisan = {
+            isim: "Doruk", soyisim: "Akgül",
+            maas: 5000, departman: "İK",
+
+            tamAd: function () {
+
+                return this.isim + " " + this.soyisim;
+            },
+
+            zamYap: function () {
+                return this.isim + "kişiye %5 zam yapıldı"
+            }
+        };
+
+
+
+        var calisan = {
+            "isim:" "Doruk", soyisim: "Akgül",
+            maas: 5000, departman: "İK"
+        };
+
+        var a = calisan.soyisim;
+
+
+        var a = calisan.tamAd();
+
+        var a = calisan.zamYap();
+
+        document.write(calisan.isim);
+        document.write(calisan.["isim"]);
+
+        document.write(a);
+
+
+
+
+
+    </script>
+</body>
+</html>

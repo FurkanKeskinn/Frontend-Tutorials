@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        #div1 {
+            border: 5px solid black;
+            width:400px;
+            height:400px;
+            margin:20px;
+            padding:10px;
+        }
+
+
+        </style>
+
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                //var a = $("#div1").width(); //width değeri
+                //var b = $("#div1").height();//height değeri
+
+                ////var a = $("#div1").innerWidth(); //padding + width değeri
+                ////var b = $("#div1").innerHeight(); //padding + height değeri
+
+                //var a = $("#div1").outerWidth(); //border + padding + width değeri
+                //var b = $("#div1").outerHeight(); //border + padding + height değeri
+
+                //var a = $("#div1").outerWidth(true); //margin + border + padding + width değeri
+                //var b = $("#div1").outerHeight(true); //margin + border + padding + height değeri
+
+                //$("#div2").html("Genişlik : " + a + "<br/>Yükseklik : " + b);
+
+                var a = $("#div1").width(600); //width değeri 600px yapar
+                var b = $("#div1").height(600); //height değeri 600px yapar
+            });
+
+
+        });
+
+
+
+    </script>
+
+</body>
+</html>

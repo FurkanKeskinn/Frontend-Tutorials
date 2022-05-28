@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+
+        #c1 {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="c1" width="500" height="500"></canvas> <!--css içerisinde width ve height değerleri almaz hata alır doğrusu bu şekil-->
+
+    <script>
+
+        var canvas = document.getElementById("c1");
+        var a = canvas.getContext("2d");
+
+        var grd = a.createLinearGradient(0, 0, 150, 0); //(linear gradient) geçişli renkli bir kare yaptık
+
+        var grd = a.createRadialGradient(75,50,10,90,60,100); //yuvarlak geçişli
+
+        grd.addColorStop(0, "black");
+        grd.addColorStop(1, "white");
+
+        a.fillStyle = grd;
+
+        a.fillRect(20, 20, 150, 150);
+
+    </script>
+
+
+</body>
+</html>

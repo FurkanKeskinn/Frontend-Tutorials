@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+    <script>
+
+        var meyveler = ["Elma", "Armut", "Muz", "Şeftali", "Kiraz"];
+
+        var sebzeler = ["Ispanak", "Pırasa"];
+
+        //var meyve1 = meyveler[0];
+
+        //document.write(meyveler);
+
+        //var deneme = meyveler.length;
+
+        //var deneme = meyveler[0];
+
+        //var deneme = meyveler[meyveler.length - 1];// son eleman indeksi bulmak için 
+
+        //document.write(deneme);
+
+        var deneme = meyveler.push("Kayısı");//yeni bir eleman eklemek için(sona ekler)
+        var deneme = meyveler.pop();//son elemanı silmek için
+        var deneme = meyveler.shift();//ilk elemanı silmek için
+        var deneme = meyveler.unshift();//yeni bir eleman eklemek için(başa ekler)
+                   
+        var deneme = meyveler.slice(2);// 'den sonra elemanları ekrana yazdırır
+                   
+        meyveler.splice(2, 0, "Erik");//('e git, 'e kadar sil, 'yi ekle)
+
+        var deneme = meyveler.concat(sebzeler);
+        var deneme2 = deneme.lenght;
+        document.write(deneme);
+        document.write(deneme2);
+
+        document.write(meyveler);
+        
+    </script>
+
+</body>
+</html>

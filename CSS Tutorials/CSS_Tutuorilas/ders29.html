@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        body{
+            counter-reset:baslik;
+        }
+
+        h1::before{
+            counter-increment:baslik;
+            content:"Bölüm " counter(baslik) " : ";
+        }
+        
+        h1{
+            counter-reset:altbaslik;
+        }
+        h2::before {
+            counter-increment: altbaslik;
+            content: "Alt Bölüm " counter(baslik) "." counter(altbaslik) " : ";
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+    <h1>Ana Başlık 1</h1>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h1>Ana Başlık 2</h1>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h1>Ana Başlık 3</h1>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h1>Ana Başlık 4</h1>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+    <h2>Alt Başlık</h2>
+
+
+
+
+</body>
+</html>

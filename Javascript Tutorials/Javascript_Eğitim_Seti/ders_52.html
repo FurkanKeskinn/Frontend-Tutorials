@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        #div1 {
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+        }
+
+        #div2 {
+            width: 30%;
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="div1">
+
+        <div id="div2"></div>
+    </div>
+
+    <br />
+
+    <input id="txt" type="text"/>
+    <br /><br />
+
+    <button id="btn">Tıkla</button>
+
+    <script>
+
+        $(function () {
+
+            //$("btn").click(function () { //tek tıklama
+
+            //    $("#div1").css("background-color", "red");
+
+            //});
+
+            $("btn").dblclick(function () { //çift tıklama 
+
+                $("#div1").css("background-color", "red");
+
+            });
+
+            //------------------------------------------------
+
+
+
+            $("#div1").mouseenter(function () { // imleç belirtilen alana girer ise reaksiyon gerçekleşir.
+
+                $("#div1").css("background-color", "red");
+
+            });
+
+            $("#div1").mouseleave(function () { // imleç belirtilen aldan ayrılırsa reaksiyon gerçekleşir.
+
+                $("#div1").css("background-color", "yellow");
+
+            });
+
+            $("#div1").mouseout(function () { // imleç belirtilen aldan ayrılırsa reaksiyon gerçekleşir.
+
+                $("#div1").css("background-color", "yellow");
+
+            });
+
+            $("#div1").hover(function () { // imleç belirtilen alana girer ise reaksiyon gerçekleşir
+
+                $("#div1").css("background-color", "red");
+
+            });
+
+            $("#div1").mouseup(function () { // imleç belirtilen alanda sol tıklama işlemi basılı değil ise reaksiyon gerçekleşir
+
+                $("#div1").css("background-color", "red");
+
+            });
+
+            $("#div1").mousedown(function () { // imleç belirtilen alanda sol tıklama işlemi basılı ise reaksiyon gerçekleşir
+
+                $("#div1").css("background-color", "black");
+
+            });
+
+            //--------------------------------------
+
+            $("#txt").keypress(function () { // belirtilen alana bir şey yazılırsa reaksiyon görür.
+
+                $("#div1").css("background-color", "black");
+
+            });
+
+            $("#txt").keyup(function () { // belirtilen alana klavyeden bir tuşa basıp elini çektiğin anda reaksiyon görür.
+
+                $("#div1").css("background-color", "black");
+
+            });
+
+            $("#txt").keydown(function () { // belirtilen alana bir şey yazılır yazılmaz reaksiyon görür.
+
+                $("#div1").css("background-color", "black");
+
+            });
+
+
+
+        });
+
+
+    </script>
+
+</body>
+</html>

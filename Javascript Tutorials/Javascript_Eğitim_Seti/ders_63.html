@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            display: block;
+            border: 2px solid lightgrey;
+            color: gray;
+            font-weight: bold;
+            margin: 15px;
+            padding: 5px;
+            height:100px
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="div1" class="deneme c1">
+        #div1 <br /><br />
+        .c1
+
+    </div>
+
+    <div id="div2" class="deneme c2">
+        #div2 <br /><br />
+        .c2
+
+    </div>
+
+    <div id="div3" class="deneme c3">
+        #div3 <br /><br />
+        .c3
+
+    </div>
+
+    <div id="div4" class="deneme c1">
+        #div4 <br /><br />
+        .c1
+
+    </div>
+
+    <br /><br />
+    <button id="btn">Tıkla</button>
+
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                $("div").first().css({ //ilk div elementi reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+                $("div").last().css({ //son div elementi reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+                $("div").eq(0).css({ //div elementinin indeks numarası girilen değere ait div reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+                $("div").filter(".c2").css({ //div elementlerinin hepsini filtereleme işlemi yaptıktan sonra .c2 classına ait div reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+                $("div").filter(".c1").css({ //div elementlerinin hepsini filtereleme işlemi yaptıktan sonra .c1 classına ait div ler reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+                $("div").not(".c1").css({ //div elementlerinin hepsini filtereleme işlemi yaptıktan sonra .c1 classına ait olmayan div ler reaksiyon gördü
+
+                    "border": "2px solid green",
+                    "color": "green"
+                });
+
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

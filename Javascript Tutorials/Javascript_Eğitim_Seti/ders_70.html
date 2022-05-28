@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            width: 100%;
+            height: 500px;
+            margin-bottom: 15px;
+            font-size: 32px;
+            position: relative;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Start</button>
+
+
+    <br /><br /><br />
+
+    <div id="div1" class="deneme"></div>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                setInterval(function () {
+
+                    $("#div1").hide(2000).show(2000).fadeOut(2000).fadeIn(2000).slideUp(2000).slideDown(2000).css("background-color", "yellow");
+
+
+                //bir önceki dersin kısa yolu
+                },12000);
+            //});
+
+        });
+    </script>
+</body>
+</html>

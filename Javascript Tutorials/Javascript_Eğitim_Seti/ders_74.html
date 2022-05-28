@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+
+    <style>
+
+        #c1 {
+            border: 2px solid black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="c1" width="500" height="500">sdsadsadsad</canvas> <!--css içerisinde width ve height değerleri almaz hata alır doğrusu bu şekil-->
+
+    <script>
+
+        var canvas = document.getElementById("c1");
+        var a = canvas.getContext("2d");
+
+        //a.moveTo(250, 20);
+        //a.lineTo(150, 300);
+        
+        //a.moveTo(250, 20); //üçgen çizimi
+        //a.lineTo(350, 300);
+
+        //a.lineTo(150, 300);
+
+        //a.lineWidth = "5"; //üçgenimimzin kenar kalınlığımı değiştirdik
+        //a.strokeStyle = "blue"; //üçgenimimzin kenar rengini değiştirdik
+
+        ////a.fill(); //üçgen içi doldurma işlemi
+        ////a.fillStyle = "green"; //üçgen içi renkli doldurma işlemi
+
+        //a.stroke();
+        
+
+        a.beginPath(); // 2 noktası kenarı belli olan cisme kapatma işlemi
+
+        a.moveTo(250, 20);
+        a.lineTo(150, 300); //noktalar ardışık olarak atılmasına dikkat edilmesi gerekir
+
+        a.lineTo(350, 300);
+
+        a.closePath(); //kapanış kısmı
+
+        a.lineWidth = "5"; //üçgenimimzin kenar kalınlığımı değiştirdik
+        a.strokeStyle = "blue"; //üçgenimimzin kenar rengini değiştirdik
+
+        //a.fill(); //üçgen içi doldurma işlemi
+        a.fillStyle = "green"; //üçgen içi renkli doldurma işlemi
+
+        a.stroke();
+        
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+
+    <script>
+
+        //var x = 3;
+        //var y = 4;
+
+
+        //if (x < y) {
+
+        //    document.write("x y'den küçüktür.")
+        //}
+
+        //else {
+        //    document.write("x y'den büyüktür.")
+        //}
+
+
+        var yas = window.prompt("Lütfen Yaşınızı Giriniz.", 0);
+
+        var saat = new Date().getHours();
+
+        if (yas < 18) {
+            document.write("Giriş yapamazsınız");
+
+        }
+        else if (yas >= 18 && yas<25 ) {
+
+            document.write("Giriş yapabilirsiniz. Bir adet ücretsiz içecek hakkınız var.");
+        }
+        else {
+            document.write("Giriş yapabilirsiniz");
+        }
+
+
+
+    </script>
+</body>
+</html>

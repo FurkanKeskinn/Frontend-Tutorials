@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        table{
+            border:1px solid black;
+        }
+
+        tr{
+            text-align:center;
+        }
+
+        td, th{
+            border:1px solid black;
+            padding:1px;
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div>
+
+        <p id="p1" class="c1">Deneme Paragraf 1 ID : p1 Class : c1 </p>
+        <p id="p2" class="c1">Paragraf 2 ID : p2 Class : c1 </p>
+        <p id="p3" class="c3">Paragraf 3 ID : p3 Class : c3 </p>
+        <p id="p4" class="c4">Paragraf 4 ID : p4 Class : c4 </p>
+
+    </div>
+
+    <table cellspacing="0">
+
+        <thead>
+
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Yaş</th>
+                <th>Meslek</th>
+            </tr>
+
+            <tr>
+                <td>Doruk Akgül</td>
+                <td>24</td>
+                <td>Endüstri Mühendisik</td>
+            </tr>
+
+            <tr>
+                <td>Kılıç Kalender</td>
+                <td>26</td>
+                <td>Kaptan</td>
+            </tr>
+
+            <tr>
+                <td>İrem Şişman</td>
+                <td>22</td>
+                <td>Çevirmen</td>
+            </tr>
+
+            <tr>
+                <td>Barış Akgül</td>
+                <td>25</td>
+                <td>Mühendis</td>
+            </tr>
+
+        </thead>
+
+    </table>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+    </ul>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+    </ul>
+
+    <a href="ders_50.html" target='_blank'>Ders 51</a>
+    <br /><br />
+
+    <button id="btn">Tıkla</button>
+
+    <script>
+
+        $(function () {
+
+              // $("#btn") //-----> aynıdır <----//document.getElementById("btn");
+
+            $("#btn").click(function () {
+
+               // $("p").css("color", "red"); //p reaksiyon görür yani hepsi
+
+               // $("#p1").css("color", "red"); //sadece p1 idlere ait eleman reaksiyon görür
+
+               // $(".c1").css("color", "red"); //sadece c1 olan classlar reaksiyon görür
+
+               // $(this).css("color", "red"); //id si kie aitse ona referans olur yani burada btnye olur.
+
+               // $("*").css("color", "red"); //html elementlerinin hepsi reaksiyon görür.
+
+               // $("p.c1").css("color", "red"); //paragraf elementinden c1 klasına reaksiyon gösterdi.
+
+               // $("#p2.c1").css("color", "red"); //p2 paragraf elementinin elementinden c1 klasına reaksiyon gösterdi.
+
+               // $("p.first").css("color", "red"); // p elementlerinden en baştaki reaksiyon görür.
+
+               // $("p.last").css("color", "red"); // p elementlerinden en sondaki reaksiyon görür.
+
+               // $("ul").css("color", "red"); // ul elementlerinin hepsi reaksiyon görür.
+
+               // $("ul li:first ").css("color", "red"); // ul nin içindeki li lerdeki ilk li ye reaksiyon gösterdi.
+
+               // $("ul li:first-child ").css("color", "red"); // ul elementlerinin hepsinin bütün ilk li lerin child ı reaksiyon görür.
+
+               // $("ul li:last ").css("color", "red"); // ul nin içindeki li lerdeki son li ye reaksiyon gösterdi.
+
+               // $("ul li:last-child ").css("color", "red"); // ul elementlerinin hepsinin bütün son li lerin child ı reaksiyon görür.
+
+               // $("[href]").css("color", "red"); // href attributenin sahip olduğu bütün elementleri reaksiyon görür.
+
+               // $("[id]").css("color", "red"); // id ye sahip olan bütün elementler reaksiyon görür.
+
+               // $("a[target = '_blank']").css("color", "red"); // target = '_blank' olanlara reaksiyon gösterdi.
+
+               // $("a[target != '_self']").css("color", "red"); // target != '_self' eşit olmayanlara reaksiyon gösterdi.
+
+               // $(":button").css("color", "red"); //var olan bütün button elementlerine reaksiyon gösterir.
+
+               // $("p:contains(ID)").css("color", "red"); //ID yazısını içeren bütünn elementlere reaksiyon gösterir.
+
+               // $("p:not(#p1)").css("color", "red"); //idsi p1 olmayan bütün paragraf elementleri reaksiyon görür.
+
+               // $("p:not(':contains(Deneme)')").css("color", "red"); //Deneme yazısını içermeyen bütün paragraf elementleri reaksiyon görür.
+                
+               // $("div:has(p)").css("color", "red"); //içerisinde p bulunan divlere reaksiyon gösterir.
+
+               // $(".c1, #p4, ul").css("color", "red"); // classı c1 olan, id si p4 olan ve ul lere reaksiyon gösterdi.
+
+               // $("tr").css("color", "red"); // table rowları reaksiyon gösterir
+
+               // $("th").css("color", "red"); // sadece th ler reaksiyon gösterir
+
+               // $("td").css("color", "red"); // sadece td ler reaksiyon gösterir
+
+               // $("tr :even").css("color", "red"); // çift sayılı olan rowları(sıra/satır) reaksiyon gösterir
+
+               // $("tr:odd").css("color", "red"); // tek sayılı olan rowları reaksiyon gösterir
+
+
+            });
+
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+
+    <script>
+
+
+
+        var a = ["Üzüm", "Elma", "Şeftali", "Kayısı"];
+
+        var b = [100, 15, 45, 6, 89, 42];
+
+        var c = [{ marka: "Mercedes", yıl: 2010 },
+        { marka: "Renault", yıl: 2015 },
+        { marka: "Honda", yıl: 2005 },];
+
+        document.getElementById("div1").innerHTML = a + "<br><br>";
+
+        a.sort();//alfabeye göre sıralar
+        a.reverse();// tersten sıralar
+        document.getElementById("div1").innerHTML = a + "<br><br>";
+
+
+        b.sort();//alfabeye göre sıralar
+        b.sort(function (x, y) {return x - y });//küçükten büyüğe doğru sıralar
+        b.sort(function (x, y) {return y - x });//büyükten küçüğe doğru sıralar
+        document.getElementById("div1").innerHTML = b + "<br><br>";
+
+
+        b.sort(function (x, y) {return x - y });//küçükten büyüğe doğru sıralar
+        var z = b[0];// en küçük elemanı gösterir
+        var z = b[b.length - 1];//en büyük elemanı gösterir
+        document.write(z);
+
+
+        function arabalariGoster() {
+
+            document.getElementById("div1"), innerHTML =
+
+                c[0].marka + " " + c[0].yıl + "<br>" +
+                c[1].marka + " " + c[1].yıl + "<br>" +
+                c[2].marka + " " + c[1].yıl + "<br>";
+        }
+
+        function sırala() {
+
+            c.sort(function (a, b) { return a.yıl - b.yıl });
+            arabalariGoster();
+        }
+
+        arabalariGoster();
+
+        sırala();
+
+        
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div id="div1"></div>
+
+    <button onclick="geri()" id="btn2">Geri</button>
+
+
+    <script>
+
+        //var x = window.screen.width;
+        //var x = screen.width;//ekran genişliği
+        //var x = screen.height;//ekran yüksekliği
+        //var x = screen.availWidth;//kullanılıabilir genişlikte pixsel sayısı
+        //var x = screen.availHeight;//kullanılıabilir yükseklikte pixsel sayısı
+        //var x = screen.colorDepth;//kullanılan bit sayısı
+        var x = screen.pixelDepth;//kullanılan pixsel derinlik sayısı
+
+
+        document.getElementById("div1").innerHTML = x;
+
+        function geri() {
+
+            window.history.back();
+        }
+
+    </script>
+
+</body>
+</html>

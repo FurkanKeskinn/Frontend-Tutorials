@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="jquery-ui.min.js"></script>
+    
+    <style>
+
+        .deneme {
+            width: 50%;
+            height: 400px;
+            padding:10px;
+            background-color: yellow;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            color:white;
+            text-align:center;
+        }
+
+         #p1{
+            top: 80px;
+            height: 20px;
+            position: relative;
+            font-size: 32px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div id="div1" class="deneme">
+        
+        <div id="div2"> DRAG
+
+            <p id="p1"></p>
+        </div>
+    
+    </div>
+
+    <script>
+
+        $(function () {
+
+            $("#div2").draggable({
+
+                axis: "y", //sadece y ekseni üzerinde hareket eder
+
+                axis: "x",//sadece x ekseni üzerinde hareket eder
+
+                axis: "both",//default ayardır her ikisi anlamına gelir her tarafa oynar
+
+                containment: "parent",//sadece ebeveyni içerisinde hareket eder
+
+                containment: "div1",//sadece div1 idli içerisinde hareket eder
+
+                start: function () {//cisimde elin mousede tıklı halde iken çalışan işlem
+                    $("#p1").html("Start")
+                },
+
+                stop: function () {//cisimde elin mousede tıklı halde değil iken çalışan işlem
+                    $("#p1").html("Stop");
+                    $("#div1").css("background-color", "blue");//stop fonksiyonu içerisinde olduğunu unutmamak gerekir. cisimde elin mousede tıklı halden elini kaldırınca arka plana etki eden işlem
+                },
+
+                drag: function () {//cisimde elin mousede tıklı halde iken arka planı değiştirme işlemi
+                    $("#div1").css("background-color", "blue");
+                },
+
+                cursor: "move",//tıklı iken move olan işlem
+
+                cursorAt: {top: -5, left:-5},//tıklanır tıklanmaz merkez konumu verilen değerleri alır olan işlem
+
+
+            });
+        });
+    </script>
+</body>
+</html><html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

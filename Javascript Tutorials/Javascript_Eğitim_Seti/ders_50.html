@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+
+</head>
+<body>
+
+    <p>JQuery öğreniyorum..</p>
+    <p>JQuery öğreniyorum..</p>
+
+    <script>
+
+
+        //$(function () {
+
+
+        //    $("p").click(function () { //başında işaret dolar işareti olmak zorunda değil
+
+        //        $(this).hide();
+
+        //    });
+
+
+        //});
+
+
+        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+        var jq = $.noConflict(); //artık dolar işareti değil de jq yaptık.
+
+        //---------------------------------
+
+
+        jq(function () {
+
+
+            jq("p").click(function () {//başında işaret dolar işareti olmak zorunda değil
+
+                jq(this).hide();
+
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

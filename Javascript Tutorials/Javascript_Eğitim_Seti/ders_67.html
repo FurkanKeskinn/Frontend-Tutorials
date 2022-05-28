@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        .deneme {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 15px;
+            font-size:32px;
+            position:relative;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn">Animate</button>
+
+    <br /><br /><br />
+
+    <div id="div1" class="deneme" style="background-color:gray">Javascript</div>
+
+    <script>
+
+        $(function () {
+
+            $("#btn").click(function () {
+
+                //$("#div1").animate({
+
+                //    //left: "200px",//soldan 200px oynatma işlemi
+
+                //    //top: "200px", //üstten 200px oynatma işlemi
+
+                //    //width: "400px", // 400px genişlik oynatma işlemi
+
+                //    //height: "400px", //400px yükseklik oynatma işlemi
+
+                //    //fontSize: "64px", //yazı boyutu 64px yapma işlemi
+
+                //    //backgroundColor: "yellow", //animate ile arka plan rengi değişmez
+
+                //    //color: "yellow", //animate ileyazı rengi değişmez
+
+                //    height: "+=100px",  //her butona basıldığında 100px artar
+
+                //    height: "-=100px",  //her butona basıldığında 100px azalır
+
+                //    height: "toggle",  //her butona açık ise kapatma, kapalı ise açma işlemi
+
+                //    width: "toggle",  //her butona açık ise kapatma, kapalı ise açma işlemi
+
+                //},3000);//3 saniye işlemi 
+
+
+                //$("#div1").animate({height:"500px"}, 3000); //ilk önce 500 e yükseldi
+                //$("#div1").animate({ width:"500px"}, 3000);//sonra 500 e genişledi
+                //$("#div1").animate({ height: "200px"}, 3000);//sonra 200 e düştü
+                //$("#div1").animate({ width: "200px"}, 3000);//en son 200 e daraldı
+
+
+                $("#div1").animate({ height: "500px" }, 3000); //ilk önce 500 e yükseldi
+
+                $("#div1").queue(function() { //bütün animasyonları durdurdu ve içindeki işlemleri yaptırdı
+
+                    $(this).css("background-color", "yellow"); //sarı arka plan yaptı
+                    $(this).dequeue(); //durdurulan animasyonlar tekrardan başlatır
+
+                    });
+
+                $("#div1").animate({ width: "500px" }, 3000);
+
+                $("#div1").queue(function () { //bütün animasyonları durdurdu ve içindeki işlemleri yaptırdı
+
+                    $(this).css("background-color", "green"); //yeşil arka plan yaptı
+                    $(this).dequeue(); //durdurulan animasyonlar tekrardan başlatır
+
+                });
+                $("#div1").animate({ height: "200px" }, 3000);
+
+                $("#div1").queue(function () { //bütün animasyonları durdurdu ve içindeki işlemleri yaptırdı
+
+                    $(this).css("background-color", "red"); //kırmızı arka plan yaptı
+                    $(this).dequeue(); //durdurulan animasyonlar tekrardan başlatır
+
+                });
+                $("#div1").animate({ width: "200px" }, 3000);
+
+                $("#div1").queue(function () { //bütün animasyonları durdurdu ve içindeki işlemleri yaptırdı
+
+                    $(this).css("background-color", "gray"); //gri arka plan yaptı
+                    $(this).dequeue(); //durdurulan animasyonlar tekrardan başlatır
+
+                });
+
+            });
+
+
+        });
+
+
+    </script>
+</body>
+</html>

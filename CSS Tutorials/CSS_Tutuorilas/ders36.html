@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+
+            /*animation-name: ornek;
+
+            animation-duration: 5s;*/
+
+            /*animation-delay:2s;*/
+
+            /*animation-iteration-count: 2;*/
+            /*animation-iteration-count: infinite;*/
+
+            /*animation-direction:reverse;*/
+            /*animation-direction: alternate;*/
+            /*animation-direction: alternate-reverse;*/
+
+            /*transition-timing-function: ease;*/
+            /*transition-timing-function: ease-in;*/
+            /*transition-timing-function: ease-out;*/
+            /*transition-timing-function: ease-in-out;*/
+            /*transition-timing-function: linear;*/
+
+            animation:ornek 8s linear 2s infinite alternate;
+        }
+
+        /*@keyframes ornek {
+            from {
+                background-color:yellow;
+                left: 0;
+            }
+
+            to {
+                background-color: green;
+                left: 300px;
+            }
+        }*/
+
+        @keyframes ornek {
+            0% { 
+                background-color: yellow;
+                left:0;
+                top:0;
+
+            }
+
+            25% {
+                background-color: red;
+                left: 400px;
+                top: 0;
+            }
+
+            50% {
+                background-color: rosybrown;
+                left: 400px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: goldenrod;
+                left: 0;
+                top: 200px;
+            }
+
+
+            100% {
+                background-color: green;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div></div>
+
+</body>
+</html>
